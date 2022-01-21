@@ -1,0 +1,164 @@
+.content
+  padding-top: 25px
+  background-color: #F5F5F5
+  background-image: url("../images/bgr.png")
+  background-size: 100%
+  background-repeat: no-repeat
+  //Banner + Slider
+  .content__banner
+    height: 235px
+    //margin-top: 25px
+    display: flex
+
+    .content__banner-slider
+      flex: 2
+      background-image: url("../images/slider.png")
+      background-repeat: no-repeat
+      background-size: cover
+      object-fit: cover
+
+    .content__banner-static
+      flex: 1
+      margin-left: 5px
+      display: flex
+      flex-direction: column
+
+      .content__banner-static1
+        background-image: url("../images/static1.png")
+        background-repeat: no-repeat
+        background-size: cover
+        object-fit: cover
+        flex: 1
+
+      .content__banner-static2
+        margin-top: 5px
+        background-image: url("../images/static2.png")
+        background-repeat: no-repeat
+        background-size: cover
+        object-fit: cover
+        flex: 1
+  //Sale
+  .content__sale
+    margin-top: 10px
+    background-color: $color_white
+
+    .content__sale-list
+      display: flex
+
+      .content__sale-link
+        flex: 1
+        text-decoration: none
+        padding: 16px 16px 5px 16px
+
+        .content__sale-thumbnail
+          display: flex
+          flex-direction: column
+          justify-items: center
+          align-items: center
+
+          &:hover
+            transform: translateY(-0.125rem)
+            animation: ease 1s
+
+          .content__sale-img
+            width: 45px
+            height: 45px
+
+          .content__sale-title
+            margin-top: 8px
+            text-align: center
+            color: $color_black
+            font-size: .8125rem
+            line-height: .875rem
+            max-width: 150px
+            margin-bottom: 8px
+  //Banner Static
+  .content__banner-big
+    margin-top: 20px
+    height: 112px
+    width: 100%
+    background-image: url("../images/banner-static.png")
+    background-repeat: no-repeat
+    background-size: 100% auto
+    object-fit: cover
+  //Category
+  .content__category
+    margin-top: 20px
+    height: 351px
+    background-color: $color_white
+
+    .content__category-header
+      padding: 0 1.25rem
+      height: 3.75rem
+      display: flex
+
+      .content__category-title
+        line-height: 3.75rem
+        align-content: center
+        text-transform: uppercase
+        font-size: 1rem
+        color: rgba(1, 1, 10, 0.54)
+        font-weight: 400
+
+    .content__category__content
+      display: flex
+      flex-direction: column
+
+      .content__category-list
+        flex: 1
+        display: flex
+
+        &:first-child
+          .content__category-link
+            border-top: 1px solid rgba(0, 0, 0, .05)
+            border-right: 1px solid rgba(0, 0, 0, .05)
+            border-bottom: none
+
+        .content__category-link
+          &:hover
+            box-shadow: 3px 3px rgba(0, 0, 0, .01)
+            border-color: rgba(0, 0, 0, .08)
+          border-top: 1px solid rgba(0, 0, 0, .05)
+          border-right: 1px solid rgba(0, 0, 0, .05)
+          border-bottom: 1px solid rgba(0, 0, 0, .05)
+          flex: 1
+          text-decoration: none
+          color: $color_black
+
+          .content__category-thumbnail
+            display: flex
+            flex-direction: column
+            justify-items: center
+            align-items: center
+
+            .content__category-img
+              margin-top: 10%
+              width: 83px
+              height: 88px
+
+            .content__category-title
+              text-transform: capitalize
+              margin: 8px 9px
+              text-align: center
+              color: $color_black
+              font-size: .8125rem
+              line-height: .875rem
+              max-width: 150px
+  //Flash Sale
+  .content__flash
+    margin-top: 20px
+    background-color: white
+    height: 300px
+    .content__flash-header
+      height: 60px
+      padding: 0 20px
+      display: flex
+      justify-content: space-between
+      justify-items: center
+      .content__flash-img
+        margin: auto 0
+        height: 25px
+      .content__flash-link
+        line-height: 60px
+        text-decoration: none
+        color: $color_background
