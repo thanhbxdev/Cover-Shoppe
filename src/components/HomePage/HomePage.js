@@ -28,7 +28,14 @@ import Cate18 from "../../assets/images/cate-18.png"
 import Cate19 from "../../assets/images/cate-19.png"
 import Cate20 from "../../assets/images/cate-20.png"
 import Flash from "../../assets/images/flash-sale.png"
-
+import Flash1 from "../../assets/images/flash-11.jpg"
+import Flash2 from "../../assets/images/flash-2.png"
+import Flash3 from "../../assets/images/flash-3.jpg"
+import Flash4 from "../../assets/images/flash-4.jpg"
+import Flash5 from "../../assets/images/flash-5.png"
+import Flash6 from "../../assets/images/flash-6.jpg"
+import Flash8 from "../../assets/images/flash-bgr.png"
+import Banner from  "../../assets/images/bannerIMG.png"
 
 
 function HomePage() {
@@ -295,6 +302,101 @@ function HomePage() {
                         <a href="#" className="content__flash-link">
                             Xem tất cả &#8250;
                         </a>
+                    </div>
+                    <div className="content__flash-list">
+                        <a href="#" className="content__flash-link">
+                            <img src={Flash8} alt="" className="content__flash-bgr"/>
+                            <img src={Flash1} alt="Ảnh chưa hiển thị" className="content__flash-img"/>
+                            <div className="content__flash-price">
+                                <div className="price">
+                                    <i>&#8363;</i> 200.000
+                                </div>
+                                <div className="buy">
+                                    <div className="buy-small">
+                                        Đã bán 9
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" className="content__flash-link">
+                            <img src={Flash8} alt="" className="content__flash-bgr"/>
+                            <img src={Flash2} alt="Ảnh chưa hiển thị" className="content__flash-img"/>
+                            <div className="content__flash-price">
+                                <div className="price">
+                                    <i>&#8363;</i> 200.000
+                                </div>
+                                <div className="buy">
+                                    <div className="buy-small">
+                                        Đã bán 12
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" className="content__flash-link">
+                            <img src={Flash8} alt="" className="content__flash-bgr"/>
+                            <img src={Flash3} alt="Ảnh chưa hiển thị" className="content__flash-img"/>
+                            <div className="content__flash-price">
+                                <div className="price">
+                                    <i>&#8363;</i> 200.000
+                                </div>
+                                <div className="buy">
+                                    <div className="buy-small">
+                                        Đã bán 22
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" className="content__flash-link">
+                            <img src={Flash8} alt="" className="content__flash-bgr"/>
+                            <img src={Flash4} alt="Ảnh chưa hiển thị" className="content__flash-img"/>
+                            <div className="content__flash-price">
+                                <div className="price">
+                                    <i>&#8363;</i> 200.000
+                                </div>
+                                <div className="buy">
+                                    <div className="buy-small">
+                                        Đã bán 3
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" className="content__flash-link">
+                            <img src={Flash8} alt="" className="content__flash-bgr"/>
+                            <img src={Flash5} alt="Ảnh chưa hiển thị" className="content__flash-img"/>
+                            <div className="content__flash-price">
+                                <div className="price">
+                                    <i>&#8363;</i> 200.000
+                                </div>
+                                <div className="buy">
+                                    <div className="buy-small">
+                                        Đã bán 11
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" className="content__flash-link">
+                            <img src={Flash8} alt="" className="content__flash-bgr"/>
+                            <img src={Flash6} alt="Ảnh chưa hiển thị" className="content__flash-img"/>
+                            <div className="content__flash-price">
+                                <div className="price">
+                                    <i>&#8363;</i> 200.000
+                                </div>
+                                <div className="buy">
+                                    <div className="buy-small">
+                                        Đã bán 19
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                {/*Banner Image*/}
+                <div className="content__bannerIMG">
+                    <img src={Banner} alt="Ảnh chưa hiển thị" className="content__bannerIMG-img"/>
+                    <div className="content__bannerIMG-list">
+                        <a href="#" className="content__bannerIMG-link"/>
+                        <a href="#2" className="content__bannerIMG-link"/>
+                        <a href="#3" className="content__bannerIMG-link"/>
                     </div>
                 </div>
             </div>
