@@ -35,7 +35,8 @@ function Footer() {
                 </div>
                 <div className="bottom">
                     <div className="text-center">
-                        Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội,
+                        Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba
+                        Đình, Thành phố Hà Nội,
                         Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn
                     </div>
                     <div className="text-center">
