@@ -1,17 +1,18 @@
 import '../src/assets/sass/main.sass'
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import HomePage from "./components/HomePage/HomePage";
-import Fix0 from "../src/assets/images/0d.png"
+import HomePage from "./pages/User/HomePage/HomePage";
+import {Route, Switch} from "react-router-dom";
+import Error404Page from "./pages/User/Error404/Error404Page";
+import Dashboard from "./pages/Admin/Dashboard/Dashboard";
 
 function App() {
     return (
-        <div>
-            <Header/>
-            <HomePage/>
-            <Footer/>
-            <img src={Fix0} alt="" className="fix-0d"/>
-        </div>
+        <Switch>
+            <Route path="/" component={HomePage} exact/>
+            <Route path="/admin" component={Dashboard} exact/>
+            <Route exact component={Error404Page}/>
+        </Switch>
     );
 }
 
