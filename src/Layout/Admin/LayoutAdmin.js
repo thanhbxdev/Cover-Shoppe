@@ -1,9 +1,13 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import HeaderAdmin from "../../components/HeaderAdmin/HeaderAdmin";
+import FooterAdmin from "../../components/FooterAdmin/FooterAdmin";
 
-function LayoutAdmin() {
+function LayoutAdmin({children}) {
     return (
         <>
+            <HeaderAdmin/>
+            {children}
+            <FooterAdmin/>
         </>
     )
 }

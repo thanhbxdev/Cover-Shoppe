@@ -2,6 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {getAllProducts} from "../../../redux/slice/productSlice";
+import LayoutAdmin from "../../../Layout/Admin/LayoutAdmin";
 
 function Dashboard() {
     const dispath = useDispatch()
@@ -11,15 +12,9 @@ function Dashboard() {
     console.log(actions)
     console.log(products)
     return (
-        <>
-            Dash Board
-            <NavLink to="/admin/product/add">
-                Add Product
-            </NavLink>
-            <NavLink to="/admin/category/add">
-                Add Category
-            </NavLink>
-        </>
+        <LayoutAdmin>
+            DashBoard
+        </LayoutAdmin>
     )
 }
 
