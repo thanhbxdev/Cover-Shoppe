@@ -12,8 +12,8 @@ InputField.prototype = {
 }
 
 function InputField({name, label, form, disabled}) {
-    const {errors, formState} = form
-    const hasError = formState.touched[name] && errors[name]
+    const {errors} = form
+    const hasError = errors[name]
     return (
         <Controller
             name={name}

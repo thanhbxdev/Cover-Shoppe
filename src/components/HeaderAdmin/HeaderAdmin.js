@@ -6,16 +6,23 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
 import {Link, NavLink} from "react-router-dom";
 import Register from "../../pages/Auth/components/register";
+import {makeStyles} from "@mui/styles";
+
+
+const useStyles = makeStyles({
+    root: {
+        backgroundColor: "rgb(252,87,49) !important",
+    }
+
+});
 
 function HeaderAdmin() {
+    const classes = useStyles();
     const [open, setOpen] = useState(false)
 
     const handleClickOpen = () => {
@@ -27,7 +34,7 @@ function HeaderAdmin() {
     }
     return (
         <Box sx={{flexGrow: 1}}>
-            <AppBar position="static">
+            <AppBar position="static" className={classes.root}>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -40,16 +47,16 @@ function HeaderAdmin() {
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         <Link to="/admin" className="custom-link">
-                            Shoppe Manager
+                            Quản Lí Shoppe
                         </Link>
                     </Typography>
                     <NavLink to="/admin/product" className="custom-link">
-                        <Button color="inherit">Products</Button>
+                        <Button color="inherit">Sản Phẩm</Button>
                     </NavLink>
                     <NavLink to="/admin/category" className="custom-link">
-                        <Button color="inherit">Category</Button>
+                        <Button color="inherit">Danh Mục</Button>
                     </NavLink>
-                    <Button color="inherit" onClick={handleClickOpen}>Register</Button>
+                    <Button color="inherit" onClick={handleClickOpen}>Đăng Ký</Button>
                 </Toolbar>
             </AppBar>
             <Dialog
